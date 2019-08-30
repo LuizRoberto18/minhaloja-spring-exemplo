@@ -1,5 +1,7 @@
 package com.example.minhaloja.modelo;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,7 +21,7 @@ public class Cliente {
 
     @NotBlank(message = "O endereço não pode ser vazio.")
     private String endereco;
-    // private List<Pedido> pedidos;
+     private List<Pedido> pedidos;
 
     public Cliente() {
         super();
@@ -49,12 +51,12 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    // public List<Pedido> getPedidos() {
-    //     return pedidos;
-    // }
+     public List<Pedido> getPedidos() {
+         return pedidos;
+     }
 
-    // public void setPedidos(List<Pedido> pedidos) {
-    //     this.pedidos = pedidos;
-    // }
+     public void setPedidos(List<Pedido> pedidos) {
+         this.pedidos = pedidos;
+     }
 
 }

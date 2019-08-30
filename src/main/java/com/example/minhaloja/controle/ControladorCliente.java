@@ -38,10 +38,10 @@ public class ControladorCliente {
         return retorno;
     }
 
-    // @InitBinder
-    // protected void initbinder(WebDataBinder binder){
-    // binder.setValidator();
-    // }
+     @InitBinder
+     protected void initbinder(WebDataBinder binder){
+     binder.setValidator(null);
+    }
 
     @RequestMapping("/novo_cliente")
     public ModelAndView cadastroCliente(@Valid Cliente cliente, BindingResult bidingResult, RedirectAttributes redirect){
