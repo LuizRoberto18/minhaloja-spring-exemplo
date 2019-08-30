@@ -1,0 +1,8 @@
+com/example/minhaloja/repositorios/RepositorioItem.class
+com/example/minhaloja/repositorios/RepositorioCliente.class
+com/example/minhaloja/modelo/Pedido.class
+com/example/minhaloja/controle/ControladorCliente.class
+com/example/minhaloja/controle/ControladorItem.class
+com/example/minhaloja/modelo/Cliente.class
+com/example/minhaloja/modelo/Item.class
+com/example/minhaloja/DemoApplication.class

@@ -1,0 +1,8 @@
+/home/aluno/Documentos/LuizRoberto/minhaloja-spring-exemplo/src/main/java/com/example/minhaloja/DemoApplication.java
+/home/aluno/Documentos/LuizRoberto/minhaloja-spring-exemplo/src/main/java/com/example/minhaloja/modelo/Cliente.java
+/home/aluno/Documentos/LuizRoberto/minhaloja-spring-exemplo/src/main/java/com/example/minhaloja/repositorios/RepositorioCliente.java
+/home/aluno/Documentos/LuizRoberto/minhaloja-spring-exemplo/src/main/java/com/example/minhaloja/controle/ControladorItem.java
+/home/aluno/Documentos/LuizRoberto/minhaloja-spring-exemplo/src/main/java/com/example/minhaloja/modelo/Pedido.java
+/home/aluno/Documentos/LuizRoberto/minhaloja-spring-exemplo/src/main/java/com/example/minhaloja/modelo/Item.java
+/home/aluno/Documentos/LuizRoberto/minhaloja-spring-exemplo/src/main/java/com/example/minhaloja/repositorios/RepositorioItem.java
+/home/aluno/Documentos/LuizRoberto/minhaloja-spring-exemplo/src/main/java/com/example/minhaloja/controle/ControladorCliente.java
