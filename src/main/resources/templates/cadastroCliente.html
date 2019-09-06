@@ -40,7 +40,7 @@
     </div>
     <br>     
     <div class="container">
-        <form method="POST" action="#" th:action="@{/novo_cliente}" th:object="${cliente}">
+        <form method="POST" action="#" th:action="@{/novo_cliente}" th:object="${cliente}" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nome"
@@ -52,6 +52,11 @@
                 <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço do cliente"
                 th:field="*{endereco}" th:value="${nome}">
                 <p th:if="${#fields.hasErrors('endereco')}" th:errors="${cliente.endereco}">Name Error</p>    
+            </div>
+            <div class="form-group">
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto">
+                <p th:if="${#fields.hasErrors('endereco')}" th:errors="${cliente.endereco}">Name Error</p>
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
             <button type="submit" class="btn btn-primary">Atualizar dados</button>

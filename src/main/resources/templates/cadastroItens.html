@@ -41,7 +41,7 @@
     </div>
     <br>
     <div class="container">
-        <form method="POST" action="/novo_item">
+        <form method="POST" action="/novo_item" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="nome">Nome</label>
                 <input type="text" class="form-control" id="nome"name="nome" aria-describedby="nome" placeholder="Nome do item">
@@ -49,6 +49,10 @@
             <div class="form-group">
                 <label for="preco">Preço</label>
                 <input type="text" class="form-control" id="preco" name="preco" placeholder="Preço do item">
+            </div>
+            <div class="form-group">
+                <label for="foto">Foto</label>
+                <input type="file" class="form-control" id="foto" name="foto">
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
             <button type="submit" class="btn btn-primary">Atualizar Item</button>
