@@ -5,13 +5,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import javax.validation.Path;
 import javax.validation.Valid;
 
 import com.example.minhaloja.modelo.Cliente;
 import com.example.minhaloja.repositorios.RepositorioCliente;
 
-import org.apache.tomcat.util.http.fileupload.FileUtils;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
@@ -23,7 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import ch.qos.logback.core.net.server.Client;
+
 
 @RestController
 public class ControladorCliente {
@@ -63,7 +62,7 @@ public class ControladorCliente {
 
         if(!foto.isEmpty()){
             String path = processaArquivo(cliente, foto);
-            cliente.sePathToFoto(path);
+            cliente.setPathToFoto(path);
             repositorioCliente.save(cliente);
         }
         redirect.addFlashAttribute("mensagem", "Cliente cadastrado com sucesso!");     
